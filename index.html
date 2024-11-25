@@ -1,508 +1,202 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Engineer and Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'IBM Plex Mono', monospace;
+        }
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <meta name="description" content="Name of your web site">
-    <meta name="author" content="Marketify">
+        .hero {
+            padding: 8rem 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
 
-    <title>My Portfolio</title>
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            max-width: 850px;
+        }
 
-    <!-- STYLES -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
-    <!-- /STYLES -->
+        .project-card {
+            background: #151515;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
 
+        .project-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #3366ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #2952cc;
+        }
+
+        .newsletter {
+            background: #151515;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .newsletter h2 {
+            margin-bottom: 1rem;
+        }
+
+        .newsletter p {
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 6px;
+            background: #252525;
+            color: white;
+            font-family: inherit;
+        }
+
+        .newsletter-form button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            background: #3366ff;
+            color: white;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: #2952cc;
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 
 <body>
-
-    <!-- WRAPPER ALL -->
-    <div class="arlo_tm_wrapper_all">
-
-        <div id="arlo_tm_popup_blog">
-            <div class="container">
-                <div class="inner_popup scrollable"></div>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-location">Asia/Jakarta</div>
+            <div class="nav-links">
+                <a href="index.html" data-aos="fade-down" data-aos-delay="100">Home</a>
+                <a href="about.html" data-aos="fade-down" data-aos-delay="200">About</a>
+                <a href="projects.html" data-aos="fade-down" data-aos-delay="300">Work</a>
+                <a href="blogs.html" data-aos="fade-down" data-aos-delay="400">Blog</a>
             </div>
-            <span class="close"><a href="#"></a></span>
+            <div class="nav-time">05:11:30</div>
+        </nav>
+
+        <section class="hero">
+            <h1 data-aos="fade-up">Software engineer</h1>
+            <p data-aos="fade-up" data-aos-delay="100">I'm Billy, a design engineer where I craft intuitive user
+                experiences. After hours, I build my own projects.</p>
+        </section>
+
+        <div class="project-card" data-aos="fade-up">
+            <img src="/api/placeholder/1200/400" alt="Once UI Project" class="project-image">
+            <h3 class="project-title">Building Once UI, a Customizable Design System</h3>
+            <p class="project-description">Development of a flexible and highly customizable design system using NextJs
+                for front-end and Figma for design collaboration.</p>
+            <a href="#" class="cta-button">Read Case Study</a>
         </div>
 
-        <!-- PRELOADER -->
-        <div class="arlo_tm_preloader">
-            <div class="spinner_wrap">
-                <div class="spinner"></div>
-            </div>
+        <div class="project-card" data-aos="fade-up">
+            <img src="/api/placeholder/1200/400" alt="Portfolio Creator" class="project-image">
+            <h3 class="project-title">Simple portfolio creator built with Once UI and Next.js</h3>
+            <p class="project-description">A minimalist portfolio creation tool that combines the power of Once UI
+                components with Next.js framework.</p>
+            <a href="#" class="cta-button">Read Case Study</a>
         </div>
-        <!-- /PRELOADER -->
 
-        <!-- MOBILE MENU -->
-        <div class="arlo_tm_mobile_header_wrap">
-            <div class="main_wrap">
-                <div class="arlo_tm_trigger">
-                    <div class="hamburger hamburger--collapse-r">
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="arlo_tm_mobile_menu_wrap">
-                <div class="mob_menu">
-                    <ul class="anchor_nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="project-card" data-aos="fade-up">
+            <img src="/api/placeholder/1200/400" alt="Design Handover" class="project-image">
+            <h3 class="project-title">Automating Design Handovers with a Figma to Code Pipeline</h3>
+            <p class="project-description">Explore the everlasting collision between using spaces and tabs for code
+                indentation, and why this choice matters more than you might think.</p>
+            <a href="#" class="cta-button">Read Case Study</a>
         </div>
-        <!-- /MOBILE MENU -->
 
-        <!-- CONTENT -->
-        <div class="arlo_tm_content">
-
-            <!-- LEFTPART -->
-            <div class="arlo_tm_leftpart_wrap">
-                <div class="leftpart_inner">
-                    <div class="logo_wrap">
-                        <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
-                    </div>
-                    <div class="menu_list_wrap">
-                        <ul class="anchor_nav">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="leftpart_bottom">
-                        <div class="social_wrap">
-                            <ul>
-                                <li><a href="https://www.facebook.com/ghifari.billy/"><i class="xcon-facebook"></i></a>
-                                </li>
-                                <li><a href="#"><i class="xcon-twitter"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/r-billiyan-mulkan-ghifari-056bb0138/"><i
-                                            class="xcon-linkedin"></i></a></li>
-                                <li><a href="https://www.instagram.com/ybiill/"><i class="xcon-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a>
-                </div>
-            </div>
-            <!-- /LEFTPART -->
-
-            <!-- RIGHTPART -->
-            <div class="arlo_tm_rightpart">
-                <div class="rightpart_inner">
-                    <div class="arlo_tm_section" id="home">
-                        <div class="arlo_tm_hero_header_wrap">
-                            <div class="arlo_tm_universal_box_wrap">
-                                <div class="bg_wrap">
-                                    <div class="overlay_image hero jarallax" data-speed="0.1"></div>
-                                    <div class="overlay_color hero"></div>
-                                </div>
-                                <div class="content hero">
-                                    <div class="inner_content">
-                                        <div class="image_wrap">
-                                            <img src="img/hero/Billy.jpeg" alt="" />
-                                        </div>
-                                        <div class="name_holder">
-                                            <h3>R. <span>Billiyan</span> Mulkan Ghifari</h3>
-                                        </div>
-                                        <div class="text_typing">
-                                            <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="arlo_tm_arrow_wrap bounce anchor">
-                                    <a href="#about"><i class="xcon-angle-double-down"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ABOUT -->
-                    <div class="arlo_tm_section relative" id="about">
-                        <div class="arlo_tm_about_wrapper_all">
-                            <div class="container">
-                                <div class="arlo_tm_title_holder">
-                                    <h3>About Me</h3>
-                                    <span>Main informations about me</span>
-                                </div>
-                                <div class="arlo_tm_about_wrap">
-                                    <div class="author_wrap">
-                                        <div class="leftbox">
-                                            <div class="about_image_wrap parallax" data-relative-input="true">
-                                                <div class="image layer" data-depth="0.1">
-                                                    <img src="img/about/550x640.jpg" alt="" />
-                                                    <div class="inner" data-img-url="img/about/1.jpg"></div>
-                                                </div>
-                                                <div class="border layer" data-depth="0.2">
-                                                    <img src="img/about/550x640.jpg" alt="" />
-                                                    <div class="inner"></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="rightbox">
-                                            <div class="arlo_tm_mini_title_holder">
-                                                <h4>I'm R. Billiyan Mulkan Ghifari and <span
-                                                        class="arlo_tm_animation_text_word"></span></h4>
-                                            </div>
-                                            <div class="definition">
-                                                <p>Hi! My name is <strong>R. Billiyan Mulkan Ghifari</strong>.I am a
-                                                    Mobile Developer and Web Developer, and I am very passionate and
-                                                    dedicated to my work. I enjoy every step of the design process, from
-                                                    discussion and collaboration to concept and execution, but I find it
-                                                    most satisfying to see the finished product do everything worthwhile
-                                                    to do.</p>
-                                            </div>
-                                            <div class="buttons_wrap">
-                                                <ul>
-                                                    <li>
-                                                        <a href="https://drive.google.com/file/d/1-sjEaFkBhvwvCMcoFcoDxqtucD6Zo3vU/view?usp=sharing"><span>Download CV</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /ABOUT -->
-
-                    <!-- SKILLS -->
-                    <div class="arlo_tm_section">
-                        <div class="arlo_tm_skills_wrap">
-                            <div class="container">
-                                <div class="inner_wrap">
-                                    <div class="leftbox">
-                                        <div class="arlo_tm_mini_title_holder">
-                                            <h4>Some About my Abilities</h4>
-                                        </div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since. Lorem
-                                            Ipsum has been the industry. Lorem Ipsum has been the industry's
-                                            standard dummy text since. Lorem Ipsum is simply.</p>
-                                    </div>
-                                    <div class="rightbox">
-                                        <div class="progress_bar_wrap_total">
-                                            <div class="arlo_tm_progress_wrap" data-size="small" data-round="c"
-                                                data-strip="off">
-                                                <div class="arlo_tm_progress" data-value="75" data-color="#000">
-                                                    <span><span class="label">Mobile Apps - <span
-                                                                class="experience">Java & Flutter</span></span><span
-                                                            class="number">75%</span></span>
-                                                    <div class="arlo_tm_bar_bg">
-                                                        <div class="arlo_tm_bar_wrap">
-                                                            <div class="arlo_tm_bar"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="arlo_tm_progress" data-value="85" data-color="#000">
-                                                    <span><span class="label">PHP <span class="experience">Codeigniter 3
-                                                                And Laravel (Learning Stage)</span></span><span
-                                                            class="number">80%</span></span>
-                                                    <div class="arlo_tm_bar_bg">
-                                                        <div class="arlo_tm_bar_wrap">
-                                                            <div class="arlo_tm_bar"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="arlo_tm_progress" data-value="75" data-color="#000">
-                                                    <span><span class="label">HTML, CSS<span
-                                                                class="experience">Bootstrap And
-                                                                Native</span></span><span
-                                                            class="number">75%</span></span>
-                                                    <div class="arlo_tm_bar_bg">
-                                                        <div class="arlo_tm_bar_wrap">
-                                                            <div class="arlo_tm_bar"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="arlo_tm_progress" data-value="80" data-color="#000">
-                                                    <span><span class="label">UI Design<span class="experience">UI
-                                                                Flutter And UI Figma</span></span><span
-                                                            class="number">80%</span></span>
-                                                    <div class="arlo_tm_bar_bg">
-                                                        <div class="arlo_tm_bar_wrap">
-                                                            <div class="arlo_tm_bar"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /SKILLS -->
-
-                    <!-- PORTFOLIO -->
-                    <div class="arlo_tm_section relative" id="portfolio">
-                        <div class="arlo_tm_portfolio_wrapper_all">
-
-                            <!-- PORTFOLIO FILTER -->
-                            <div class="arlo_tm_second_portfolio">
-                                <div class="container">
-                                    <div class="arlo_tm_portfolio_wrap">
-                                        <div class="arlo_tm_title_holder portfolio">
-                                            <h3>Creative Works</h3>
-                                            <span>Check out our latest creative works</span>
-                                        </div>
-                                        <div class="arlo_tm_portfolio_titles"></div>
-                                        <ul class="arlo_tm_portfolio_filter">
-                                            <li><a href="#" class="current" data-filter="*">All</a></li>
-                                            <li><a href="#" data-filter=".web">Web</a></li>
-                                            <li><a href="#" data-filter=".mobile">Mobile</a></li>
-                                            <li><a href="#" data-filter=".uidesign">UI</a></li>
-                                        </ul>
-                                        <ul class="arlo_tm_portfolio_list gallery_zoom">
-                                            <li class="web">
-                                                <div class="entry arlo_tm_portfolio_animation_wrap"
-                                                    data-title="Legalisir Online" data-category="Website (CI 3)">
-                                                    <a href="portfolio-lego.html">
-                                                        <img src="img/portfolio/1.png" alt="" />
-                                                        <div class="arlo_tm_portfolio_image_main"
-                                                            data-img-url="img/portfolio/1.png"></div>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            
-                                            <li class="mobile">
-                                                <div class="entry arlo_tm_portfolio_animation_wrap" data-title="Siginjai Mobile"
-                                                    data-category="Mobile Java">
-                                                    <a href="portfolio-siginjai.html">
-                                                        <img src="img/portfolio/4.png" alt="" />
-                                                        <div class="arlo_tm_portfolio_image_main"
-                                                            data-img-url="img/portfolio/4.png"></div>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="web">
-                                                <div class="entry arlo_tm_portfolio_animation_wrap"
-                                                    data-title="Rekam Medis Online" data-category="Website (CI 3)">
-                                                    <a href="portfolio-rekammedis.html">
-                                                        <img src="img/portfolio/3.png" alt="" />
-                                                        <div class="arlo_tm_portfolio_image_main"
-                                                            data-img-url="img/portfolio/3.png"></div>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="mobile">
-                                                <div class="entry arlo_tm_portfolio_animation_wrap"
-                                                    data-title="Islamic Architecture" data-category="Mobile Java">
-                                                    <a href="portfolio-arsitecture.html">
-                                                        <img src="img/portfolio/5.png" alt="" />
-                                                        <div class="arlo_tm_portfolio_image_main"
-                                                            data-img-url="img/portfolio/5.png"></div>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="mobile uidesign">
-                                                <div class="entry arlo_tm_portfolio_animation_wrap"
-                                                    data-title="Redesign Instagram" data-category="UI Flutter Mobile">
-                                                    <a href="portfolio-redisgnIG.html">
-                                                        <img src="img/portfolio/6.png" alt="" />
-                                                        <div class="arlo_tm_portfolio_image_main"
-                                                            data-img-url="img/portfolio/6.png"></div>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="web">
-                                                <div class="entry arlo_tm_portfolio_animation_wrap"
-                                                    data-title="Sijimat" data-category="Website (CI 3)">
-                                                    <a href="portfolio-sijimat.html">
-                                                        <img src="img/portfolio/2.png" alt="" />
-                                                        <div class="arlo_tm_portfolio_image_main"
-                                                            data-img-url="img/portfolio/2.png"></div>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /PORTFOLIO FILTER -->
-
-                        </div>
-                    </div>
-                    <!-- /PORTFOLIO -->
-
-                    <!-- TESTIMONIALS -->
-                    <div class="arlo_tm_section" id="testimonials">
-                        <div class="arlo_tm_testimonials_wrapper_all">
-                            <div class="arlo_tm_universal_box_wrap">
-                                <div class="bg_wrap">
-                                    <div class="overlay_image testimonial jarallax" data-speed="0"></div>
-                                    <div class="overlay_color testimonial"></div>
-                                </div>
-                                <div class="content testimonial">
-                                    <div class="arlo_tm_testimonial_wrap">
-                                        <div class="container">
-                                            <div class="carousel_wrap">
-                                                <ul class="owl-carousel">
-                                                    <li class="item">
-                                                        <div class="inner">
-                                                            <div class="quotebox_wrap">
-                                                                <i class="xcon-quote-left"></i>
-                                                            </div>
-                                                            <div class="definitions_wrap">
-                                                                <p>“Arlo team are easy to work with and helped me make
-                                                                    amazing websites in a short amount of time. Thanks
-                                                                    guys for works.”</p>
-                                                            </div>
-                                                            <div class="name_holder">
-                                                                <p>Antonio Baraley, CEO Founder</p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item">
-                                                        <div class="inner">
-                                                            <div class="quotebox_wrap">
-                                                                <i class="xcon-quote-left"></i>
-                                                            </div>
-                                                            <div class="definitions_wrap">
-                                                                <p>“We were looking for a logo with a touch of
-                                                                    modernism. Arlo grasped our needs and produced a
-                                                                    stunning design.”</p>
-                                                            </div>
-                                                            <div class="name_holder">
-                                                                <p>Calena Gomez, AOC Designer</p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item">
-                                                        <div class="inner">
-                                                            <div class="quotebox_wrap">
-                                                                <i class="xcon-quote-left"></i>
-                                                            </div>
-                                                            <div class="definitions_wrap">
-                                                                <p>“Awesome to work with Arlo. Good organized, easy to
-                                                                    communicate with, responsive with next iterations.”
-                                                                </p>
-                                                            </div>
-                                                            <div class="name_holder">
-                                                                <p>Torren Winston, Photographer.</p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /TESTIMONIALS -->
-
-                    <!-- CONTACT & FOOTER -->
-                    <div class="arlo_tm_section" id="contact" style="margin-top: 80px;">
-                        <div class="container">
-                            <div class="arlo_tm_title_holder contact">
-                                <h3>Contact Me</h3>
-                                <span>Get in touch with me</span>
-                            </div>
-                        </div>
-                        <div class="arlo_tm_footer_contact_wrapper_all">
-                            <div class="arlo_tm_contact_wrap_all">
-                                <div class="container">
-                                    <div class="leftbox">
-                                        <div class="arlo_tm_mini_title_holder contact">
-                                            <h4>Get in Touch</h4>
-                                        </div>
-                                        <div class="short_info_wrap">
-                                            <ul>
-                                                <li>
-                                                    <p><label>Address:</label><span>Malang, East Java, Indonesia</span>
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p><label>Email:</label><span><a
-                                                                href="ghifari.billy7@gmail.com">ghifari.billy7@gmail.com</a></span>
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p><label>Instagram</label><span><a
-                                                                href="https://www.instagram.com/hallobilly">@hallobilly</a></span>
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="rightbox">
-                                        <div class="arlo_tm_contact_wrap">
-                                            <div class="main_input_wrap">
-                                                <form action="/modal/contact.php" method="post" class="contact_form"
-                                                    id="contact_form">
-                                                    <div class="returnmessage"
-                                                        data-success="Your message has been received, We will contact you soon.">
-                                                    </div>
-                                                    <div class="empty_notice"><span>Please Fill Required Fields</span>
-                                                    </div>
-                                                    <div class="wrap">
-                                                        <input id="name" type="text" placeholder="Your Name">
-                                                    </div>
-                                                    <div class="wrap">
-                                                        <input id="email" type="text" placeholder="Your Email">
-                                                    </div>
-                                                    <div class="wrap">
-                                                        <textarea id="message" placeholder="Your Message"></textarea>
-                                                    </div>
-                                                    <div class="arlo_tm_button">
-                                                        <a id="send_message" href="#"><span>Send Message</span></a>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="arlo_tm_footer_wrap">
-                                <div class="container">
-                                    <p>&copy; Copyright 2019. All Rights are Reserved.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /CONTACT & FOOTER -->
-
-                </div>
-            </div>
-            <!-- /RIGHTPART -->
-
-            <a class="arlo_tm_totop" href="#"></a>
-
-        </div>
+        <section class="newsletter" data-aos="fade-up">
+            <h2>Subscribe to Billy's Newsletter</h2>
+            <p>I occasionally write about design, technology, and share thoughts on the intersection of creativity and
+                engineering.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Email address">
+                <button type="submit">Sign up</button>
+            </form>
+        </section>
     </div>
-    <!-- / WRAPPER ALL -->
+    <footer>
+        © 2024 / R. Billiyan Mulkan Ghifari / Built your portfolio with Once UI
+    </footer>
 
-    <!-- SCRIPTS -->
-    <script src="js/jquery.js"></script>
-    <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
-    <script src="js/plugins.js"></script>
-    <script src="js/init.js"></script>
-    <!-- /SCRIPTS -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
 </body>
 
 </html>

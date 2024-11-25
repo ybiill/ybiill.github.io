@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+
+        .location {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            /* Menggunakan flexbox */
+            flex-direction: column;
+            /* Mengatur arah child elements menjadi vertikal */
+            justify-content: center;
+            /* Menengahkan konten secara vertikal */
+            height: 100%;
+            width: 250px;
+            /* height: 100vh; */
+            position: fixed;
+            padding: 40px 20px;
+            background-color: #0a0a0a;
+            border-right: 1px solid #222;
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+
+        .sidebar-section h3 {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-section p {
+            font-size: 0.9rem;
+            margin: 5px 0;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 250px;
+            padding: 50px 40px 40px;
+            flex: 1;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-info h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .profile-info h2 {
+            font-size: 1.5rem;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: #1a1a1a;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .schedule-call {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 8px 20px;
+            background-color: #1a1a1a;
+            border: 1px solid #4CAF50;
+            color: #4CAF50;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .work-section {
+            margin: 60px 0;
+        }
+
+        .work-item {
+            margin-bottom: 40px;
+        }
+
+        .work-item h3 {
+            color: #4CAF50;
+            margin-bottom: 5px;
+        }
+
+        .work-period {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .work-description {
+            margin-bottom: 20px;
+        }
+
+
+        .work-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 1024px) {
+            .top-nav {
+                left: 0;
+            }
+
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .profile-header {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .profile-info h1 {
+                font-size: 2.5rem;
+            }
+
+            .social-links {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-location">Asia/Jakarta</div>
+            <div class="nav-links">
+                <a href="index.html" data-aos="fade-down" data-aos-delay="100">Home</a>
+                <a href="about.html" data-aos="fade-down" data-aos-delay="200">About</a>
+                <a href="projects.html" data-aos="fade-down" data-aos-delay="300">Work</a>
+                <a href="blogs.html" data-aos="fade-down" data-aos-delay="400">Blog</a>
+            </div>
+            <div class="nav-time">05:11:30</div>
+        </nav>
+
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>Introduction</h3>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Work Experience</h3>
+                <p>FLY</p>
+                <p>Creativ3</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Studies</h3>
+                <p>University of Jakarta</p>
+                <p>Build the Future</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Technical skills</h3>
+                <p>Figma</p>
+                <p>Next.js</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="profile-header" data-aos="fade-up">
+                <div class="profile-info">
+                    <h1>R. Billiyan Mulkan Ghifari</h1>
+                    <h2>Design Engineer</h2>
+                    <div class="social-links">
+                        <a href="#github">GitHub</a>
+                        <a href="#linkedin">LinkedIn</a>
+                        <a href="#email">Email</a>
+                    </div>
+                </div>
+                <img src="img/about/1.jpg" alt="Profile" class="profile-image">
+            </section>
+            <section>
+                <p>R. Billiyan Mulkan Ghifari is a Jakarta-based design engineer with a passion for transforming complex
+                    challenges into
+                    simple, elegant design solutions. Her work spans digital interfaces, interactive experiences,
+                    and the convergence of design and technology.</p>
+            </section>
+
+            <section class="work-section" data-aos="fade-up">
+                <h2>Work Experience</h2>
+
+                <div class="work-item">
+                    <h3>FLY</h3>
+                    <div class="work-period">Senior Design Engineer • 2022 - Present</div>
+                    <ul class="work-description">
+                        <li>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement
+                            and 30% faster load times.</li>
+                        <li>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate
+                            50% faster.</li>
+                    </ul>
+                    <img src="/api/placeholder/600/300" alt="FLY Project" class="work-image">
+                </div>
+
+                <div class="work-item">
+                    <h3>Creativ3</h3>
+                    <div class="work-period">Lead Designer • 2018 - 2022</div>
+                    <ul class="work-description">
+                        <li>Developed a design system that unified the brand across multiple platforms, improving design
+                            consistency by 40%.</li>
+                        <li>Led a cross-functional team to launch a new product line, contributing to a 15% increase in
+                            overall company revenue.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="work-section" data-aos="fade-up">
+                <h2>Technical skills</h2>
+
+                <div class="work-item">
+                    <h3>Figma</h3>
+                    <p>Able to prototype in Figma with Once UI with unnatural speed.</p>
+                    <img src="/api/placeholder/600/300" alt="Figma Skills" class="work-image">
+                </div>
+
+                <div class="work-item">
+                    <h3>Next.js</h3>
+                    <p>Building next gen apps with Next.js + Once UI + Supabase.</p>
+                    <img src="/api/placeholder/600/300" alt="Next.js Skills" class="work-image">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        .location {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .project-card {
+            margin-bottom: 120px;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+        }
+
+        .project-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .project-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            max-width: 400px;
+        }
+
+        .project-description {
+            color: #cccccc;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+
+        .project-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .project-meta img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .case-study-link {
+            display: inline-flex;
+            align-items: center;
+            color: #4CAF50;
+            text-decoration: none;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .case-study-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #222;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .project-info {
+                flex-direction: column;
+            }
+
+            .project-image {
+                height: 400px;
+            }
+
+            .project-title {
+                font-size: 1.5rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        .highlight {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-location">Asia/Jakarta</div>
+            <div class="nav-links">
+                <a href="index.html" data-aos="fade-down" data-aos-delay="100">Home</a>
+                <a href="about.html" data-aos="fade-down" data-aos-delay="200">About</a>
+                <a href="projects.html" data-aos="fade-down" data-aos-delay="300">Work</a>
+                <a href="blogs.html" data-aos="fade-down" data-aos-delay="400">Blog</a>
+            </div>
+            <div class="nav-time">05:11:30</div>
+        </nav>
+
+        <div class="project-card" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Once UI Project"
+                class="project-image">
+            <div class="project-info">
+                <div>
+                    <h2 class="project-title">Building Once UI, a Customizable Design System</h2>
+                    <p class="project-description">Development of a flexible and highly customizable design system
+                        using Next.js for front-end and Figma for design collaboration.</p>
+                    <div class="project-meta">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" alt="Profile">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="Profile">
+                        <a href="#" class="case-study-link">Read Case Study →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="Portfolio Creator"
+                class="project-image">
+            <div class="project-info">
+                <div>
+                    <h2 class="project-title">Simple portfolio creator built with Once UI and Next.js</h2>
+                    <p class="project-description">A streamlined portfolio creation tool that helps designers and
+                        developers showcase their work with minimal setup.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d" alt="Design Handovers"
+                class="project-image">
+            <div class="project-info">
+                <div>
+                    <h2 class="project-title">Automating Design Handovers with a Figma to Code Pipeline</h2>
+                    <p class="project-description">Explore the enduring debate between using spaces and tabs for
+                        code indentation, and why this choice matters more than you might think.</p>
+                    <div class="project-meta">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" alt="Profile">
+                        <a href="#" class="case-study-link">Read Case Study →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 / Selene Yu / Build your portfolio with Once UI</p>
+            <div class="social-links">
+                <a href="#github">GitHub</a>
+                <a href="#linkedin">LinkedIn</a>
+                <a href="#email">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design & Tech Blog</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .header {
+            padding: 80px 0;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+
+        .blog-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 24px;
+        }
+
+        .blog-date {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .blog-title {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        .blog-tag {
+            display: inline-block;
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .newsletter {
+            background: linear-gradient(to right, #1a1a1a, #2a2a2a);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .newsletter h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .newsletter p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 24px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 16px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        .newsletter-button {
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: none;
+            background: #fff;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .newsletter-button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: #fff;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .social-links a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-location">Asia/Jakarta</div>
+            <div class="nav-links">
+                <a href="index.html" data-aos="fade-down" data-aos-delay="100">Home</a>
+                <a href="about.html" data-aos="fade-down" data-aos-delay="200">About</a>
+                <a href="projects.html" data-aos="fade-down" data-aos-delay="300">Work</a>
+                <a href="blogs.html" data-aos="fade-down" data-aos-delay="400">Blog</a>
+            </div>
+            <div class="nav-time">05:11:30</div>
+        </nav>
+
+        <header class="header">
+            <h1 data-aos="fade-up">Writing about design and tech...</h1>
+        </header>
+
+        <main>
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="/api/placeholder/1200/300" alt="Northern Lights" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-date">April 8, 2024</div>
+                    <h2 class="blog-title">Arriving to a new milestone in my career</h2>
+                    <span class="blog-tag">Journal</span>
+                </div>
+            </article>
+
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="blog-content">
+                    <div class="blog-date">March 5, 2024</div>
+                    <h2 class="blog-title">The 99% that remains in the drawer</h2>
+                    <span class="blog-tag">Journal</span>
+                </div>
+            </article>
+
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="blog-content">
+                    <div class="blog-date">March 5, 2024</div>
+                    <h2 class="blog-title">The rise of design engineering</h2>
+                    <span class="blog-tag">Technology</span>
+                </div>
+            </article>
+
+            <section class="newsletter" data-aos="fade-up">
+                <h2>Subscribe to Billy's Newsletter</h2>
+                <p>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email" class="newsletter-input">
+                    <button type="submit" class="newsletter-button">Sign up</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div>© 2024 / R. Billiyan Mulkan Ghifari / Build your portfolio with Once UI</div>
+            <div class="social-links">
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Update time
+        function updateTime() {
+            const now = new Date();
+            const timeElement = document.querySelector('.nav-time');
+            timeElement.textContent = now.toLocaleTimeString('en-US', { 
+                hour12: false,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
