@@ -7,20 +7,17 @@
     <title>Design Engineer and Builder</title>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/3d.css">
+    <script src="js/script.js" defer></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'IBM Plex Mono', monospace;
-        }
-
-
-        .hero {
-            padding: 8rem 2rem 4rem;
-            max-width: 1200px;
-            margin: 0 auto;
+        .hero-3d {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            margin: 100px 0px 150px 0pxß;
+            /* This ensures that both children of the container stretch to take up equal height */
         }
 
         .hero h1 {
@@ -33,6 +30,11 @@
             font-size: 1.1rem;
             opacity: 0.8;
             max-width: 850px;
+        }
+
+        .show-case {
+          margin-top: 150px;
+          padding: 2rem 0;
         }
 
         .project-card {
@@ -134,7 +136,7 @@
 
 <body>
     <div class="container">
-        <nav class="navbar">
+        <nav class="navbar" style="margin-bottom: 150px;">
             <div class="nav-location">Asia/Jakarta</div>
             <div class="nav-links">
                 <a href="index.html" data-aos="fade-down" data-aos-delay="100">Home</a>
@@ -145,35 +147,426 @@
             <div class="nav-time">05:11:30</div>
         </nav>
 
-        <section class="hero">
-            <h1 data-aos="fade-up">Software engineer</h1>
-            <p data-aos="fade-up" data-aos-delay="100">I'm Billy, a design engineer where I craft intuitive user
-                experiences. After hours, I build my own projects.</p>
+        <section class="hero-3d">
+            <div class="hero">
+                <h1 data-aos="fade-up">Software engineer</h1>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    I'm Billy, a design engineer where I craft intuitive user experiences.
+                    After hours, I build my own projects.
+                </p>
+            </div>
+            <div class="house" id="h">
+                <div class="h-lights">
+                    <div class="h-light"></div>
+                    <div class="h-light"></div>
+                    <div class="h-light"></div>
+                    <div class="h-light"></div>
+                    <div class="h-light"></div>
+                    <div class="h-light"></div>
+                </div>
+                <div class="h-shadow"></div>
+                <div class="alt">
+                    <div class="alt__front face"> </div>
+                    <div class="alt__back face"> </div>
+                    <div class="alt__right face"> </div>
+                    <div class="alt__left face"> </div>
+                    <div class="alt__top face">
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                    </div>
+                    <div class="alt__bottom face"> </div>
+                </div>
+                <div class="alb">
+                    <div class="alb__front face"> </div>
+                    <div class="alb__back face"> </div>
+                    <div class="alb__right face"> </div>
+                    <div class="alb__left face"> </div>
+                    <div class="alb__top face"> </div>
+                    <div class="alb__bottom face"> </div>
+                </div>
+                <div class="arb">
+                    <div class="arb__front face"> </div>
+                    <div class="arb__back face"> </div>
+                    <div class="arb__right face"> </div>
+                    <div class="arb__left face"> </div>
+                    <div class="arb__top face"> </div>
+                    <div class="arb__bottom face"> </div>
+                </div>
+                <div class="blt">
+                    <div class="blt__front face"> </div>
+                    <div class="blt__back face"> </div>
+                    <div class="blt__right face"> </div>
+                    <div class="blt__left face"> </div>
+                    <div class="blt__top face"> </div>
+                    <div class="blt__bottom face"> </div>
+                </div>
+                <div class="blt2">
+                    <div class="blt2__front face"> </div>
+                    <div class="blt2__back face"> </div>
+                    <div class="blt2__right face"> </div>
+                    <div class="blt2__left face"> </div>
+                    <div class="blt2__top face"> </div>
+                    <div class="blt2__bottom face"> </div>
+                </div>
+                <div class="blb">
+                    <div class="blb__front face"> </div>
+                    <div class="blb__back face"> </div>
+                    <div class="blb__right face"> </div>
+                    <div class="blb__left face"> </div>
+                    <div class="blb__top face"> </div>
+                    <div class="blb__bottom face"> </div>
+                </div>
+                <div class="blb2">
+                    <div class="blb2__front face"> </div>
+                    <div class="blb2__back face"> </div>
+                    <div class="blb2__right face"> </div>
+                    <div class="blb2__left face"> </div>
+                    <div class="blb2__top face"> </div>
+                    <div class="blb2__bottom face"> </div>
+                </div>
+                <div class="puerta-c">
+                    <div class="puerta">
+                        <div class="puerta__front face"> </div>
+                        <div class="puerta__back face"> </div>
+                        <div class="puerta__right face"> </div>
+                        <div class="puerta__left face"> </div>
+                        <div class="puerta__top face"> </div>
+                        <div class="puerta__bottom face"> </div>
+                    </div>
+                    <div class="puerta-l">
+                        <div class="puerta-l__front face"> </div>
+                        <div class="puerta-l__back face"> </div>
+                        <div class="puerta-l__right face"> </div>
+                        <div class="puerta-l__left face"> </div>
+                        <div class="puerta-l__top face"> </div>
+                        <div class="puerta-l__bottom face"> </div>
+                    </div>
+                    <div class="puerta-r">
+                        <div class="puerta-r__front face"> </div>
+                        <div class="puerta-r__back face"> </div>
+                        <div class="puerta-r__right face"> </div>
+                        <div class="puerta-r__left face"> </div>
+                        <div class="puerta-r__top face"> </div>
+                        <div class="puerta-r__bottom face"> </div>
+                    </div>
+                    <div class="puerta-t">
+                        <div class="puerta-t__front face"> </div>
+                        <div class="puerta-t__back face"> </div>
+                        <div class="puerta-t__right face"> </div>
+                        <div class="puerta-t__left face"> </div>
+                        <div class="puerta-t__top face"> </div>
+                        <div class="puerta-t__bottom face"> </div>
+                    </div>
+                </div>
+                <div class="cuadro-l">
+                    <div class="cuadro-l__front face"> </div>
+                    <div class="cuadro-l__back face"> </div>
+                    <div class="cuadro-l__right face"> </div>
+                    <div class="cuadro-l__left face"> </div>
+                    <div class="cuadro-l__top face"> </div>
+                    <div class="cuadro-l__bottom face"> </div>
+                </div>
+                <div class="cuadro-r">
+                    <div class="cuadro-r__front face"> </div>
+                    <div class="cuadro-r__back face"> </div>
+                    <div class="cuadro-r__right face"> </div>
+                    <div class="cuadro-r__left face"> </div>
+                    <div class="cuadro-r__top face"> </div>
+                    <div class="cuadro-r__bottom face"> </div>
+                </div>
+                <div class="librero">
+                    <div class="librero__front face"> </div>
+                    <div class="librero__back face"> </div>
+                    <div class="librero__right face"> </div>
+                    <div class="librero__left face"> </div>
+                    <div class="librero__top face"> </div>
+                    <div class="librero__bottom face"> </div>
+                </div>
+                <div class="libros">
+                    <div class="libro">
+                        <div class="libro__front face"> </div>
+                        <div class="libro__back face"> </div>
+                        <div class="libro__right face"> </div>
+                        <div class="libro__left face"> </div>
+                        <div class="libro__top face"> </div>
+                        <div class="libro__bottom face"> </div>
+                    </div>
+                    <div class="libro">
+                        <div class="libro__front face"> </div>
+                        <div class="libro__back face"> </div>
+                        <div class="libro__right face"> </div>
+                        <div class="libro__left face"> </div>
+                        <div class="libro__top face"> </div>
+                        <div class="libro__bottom face"> </div>
+                    </div>
+                    <div class="libro">
+                        <div class="libro__front face"> </div>
+                        <div class="libro__back face"> </div>
+                        <div class="libro__right face"> </div>
+                        <div class="libro__left face"> </div>
+                        <div class="libro__top face"> </div>
+                        <div class="libro__bottom face"> </div>
+                    </div>
+                    <div class="libro">
+                        <div class="libro__front face"> </div>
+                        <div class="libro__back face"> </div>
+                        <div class="libro__right face"> </div>
+                        <div class="libro__left face"> </div>
+                        <div class="libro__top face"> </div>
+                        <div class="libro__bottom face"> </div>
+                    </div>
+                    <div class="libro">
+                        <div class="libro__front face"> </div>
+                        <div class="libro__back face"> </div>
+                        <div class="libro__right face"> </div>
+                        <div class="libro__left face"> </div>
+                        <div class="libro__top face"> </div>
+                        <div class="libro__bottom face"> </div>
+                    </div>
+                    <div class="libro">
+                        <div class="libro__front face"> </div>
+                        <div class="libro__back face"> </div>
+                        <div class="libro__right face"> </div>
+                        <div class="libro__left face"> </div>
+                        <div class="libro__top face"> </div>
+                        <div class="libro__bottom face"> </div>
+                    </div>
+                </div>
+                <div class="fotos">
+                    <div class="foto">
+                        <div class="foto__front face"> </div>
+                        <div class="foto__back face"> </div>
+                        <div class="foto__right face"> </div>
+                        <div class="foto__left face"> </div>
+                        <div class="foto__top face"> </div>
+                        <div class="foto__bottom face"> </div>
+                    </div>
+                    <div class="foto">
+                        <div class="foto__front face"> </div>
+                        <div class="foto__back face"> </div>
+                        <div class="foto__right face"> </div>
+                        <div class="foto__left face"> </div>
+                        <div class="foto__top face"> </div>
+                        <div class="foto__bottom face"> </div>
+                    </div>
+                </div>
+                <div class="cajas">
+                    <div class="caja">
+                        <div class="caja__front face"> </div>
+                        <div class="caja__back face"> </div>
+                        <div class="caja__right face"> </div>
+                        <div class="caja__left face"> </div>
+                        <div class="caja__top face"> </div>
+                        <div class="caja__bottom face"> </div>
+                    </div>
+                    <div class="caja">
+                        <div class="caja__front face"> </div>
+                        <div class="caja__back face"> </div>
+                        <div class="caja__right face"> </div>
+                        <div class="caja__left face"> </div>
+                        <div class="caja__top face"> </div>
+                        <div class="caja__bottom face"> </div>
+                    </div>
+                    <div class="caja">
+                        <div class="caja__front face"> </div>
+                        <div class="caja__back face"> </div>
+                        <div class="caja__right face"> </div>
+                        <div class="caja__left face"> </div>
+                        <div class="caja__top face"> </div>
+                        <div class="caja__bottom face"> </div>
+                    </div>
+                </div>
+                <div class="tv">
+                    <div class="tv__front face"> </div>
+                    <div class="tv__back face"> </div>
+                    <div class="tv__right face"> </div>
+                    <div class="tv__left face"> </div>
+                    <div class="tv__top face"> </div>
+                    <div class="tv__bottom face"> </div>
+                </div>
+                <div class="repisa-t">
+                    <div class="repisa-t__front face"> </div>
+                    <div class="repisa-t__back face"> </div>
+                    <div class="repisa-t__right face"> </div>
+                    <div class="repisa-t__left face"> </div>
+                    <div class="repisa-t__top face"> </div>
+                    <div class="repisa-t__bottom face"> </div>
+                </div>
+                <div class="repisa-b">
+                    <div class="repisa-b__front face"> </div>
+                    <div class="repisa-b__back face"> </div>
+                    <div class="repisa-b__right face"> </div>
+                    <div class="repisa-b__left face"> </div>
+                    <div class="repisa-b__top face"> </div>
+                    <div class="repisa-b__bottom face"> </div>
+                </div>
+                <div class="bocina-l">
+                    <div class="bocina-l__front face"> </div>
+                    <div class="bocina-l__back face"> </div>
+                    <div class="bocina-l__right face"> </div>
+                    <div class="bocina-l__left face"> </div>
+                    <div class="bocina-l__top face"> </div>
+                    <div class="bocina-l__bottom face"> </div>
+                </div>
+                <div class="bocina-r">
+                    <div class="bocina-r__front face"> </div>
+                    <div class="bocina-r__back face"> </div>
+                    <div class="bocina-r__right face"> </div>
+                    <div class="bocina-r__left face"> </div>
+                    <div class="bocina-r__top face"> </div>
+                    <div class="bocina-r__bottom face"> </div>
+                </div>
+                <div class="muro">
+                    <div class="muro__front face"> </div>
+                    <div class="muro__back face"> </div>
+                    <div class="muro__right face"> </div>
+                    <div class="muro__left face"> </div>
+                    <div class="muro__top face"> </div>
+                    <div class="muro__bottom face"> </div>
+                </div>
+                <div class="sillon-c">
+                    <div class="sillon-b">
+                        <div class="sillon-b__front face"> </div>
+                        <div class="sillon-b__back face"> </div>
+                        <div class="sillon-b__right face"> </div>
+                        <div class="sillon-b__left face"> </div>
+                        <div class="sillon-b__top face"> </div>
+                        <div class="sillon-b__bottom face"> </div>
+                    </div>
+                    <div class="sillon-t">
+                        <div class="sillon-t__front face"> </div>
+                        <div class="sillon-t__back face"> </div>
+                        <div class="sillon-t__right face"> </div>
+                        <div class="sillon-t__left face"> </div>
+                        <div class="sillon-t__top face"> </div>
+                        <div class="sillon-t__bottom face"> </div>
+                    </div>
+                    <div class="sillon-l">
+                        <div class="sillon-l__front face"> </div>
+                        <div class="sillon-l__back face"> </div>
+                        <div class="sillon-l__right face"> </div>
+                        <div class="sillon-l__left face"> </div>
+                        <div class="sillon-l__top face"> </div>
+                        <div class="sillon-l__bottom face"> </div>
+                    </div>
+                    <div class="sillon-r">
+                        <div class="sillon-r__front face"> </div>
+                        <div class="sillon-r__back face"> </div>
+                        <div class="sillon-r__right face"> </div>
+                        <div class="sillon-r__left face"> </div>
+                        <div class="sillon-r__top face"> </div>
+                        <div class="sillon-r__bottom face"> </div>
+                    </div>
+                </div>
+                <div class="mesa-c">
+                    <div class="mesa">
+                        <div class="mesa__front face"> </div>
+                        <div class="mesa__back face"> </div>
+                        <div class="mesa__right face"> </div>
+                        <div class="mesa__left face"> </div>
+                        <div class="mesa__top face"> </div>
+                        <div class="mesa__bottom face"> </div>
+                    </div>
+                    <div class="mesa-p">
+                        <div class="mesa-p__front face"> </div>
+                        <div class="mesa-p__back face"> </div>
+                        <div class="mesa-p__right face"> </div>
+                        <div class="mesa-p__left face"> </div>
+                        <div class="mesa-p__top face"> </div>
+                        <div class="mesa-p__bottom face"> </div>
+                    </div>
+                    <div class="mesa-p">
+                        <div class="mesa-p__front face"> </div>
+                        <div class="mesa-p__back face"> </div>
+                        <div class="mesa-p__right face"> </div>
+                        <div class="mesa-p__left face"> </div>
+                        <div class="mesa-p__top face"> </div>
+                        <div class="mesa-p__bottom face"> </div>
+                    </div>
+                    <div class="mesa-p">
+                        <div class="mesa-p__front face"> </div>
+                        <div class="mesa-p__back face"> </div>
+                        <div class="mesa-p__right face"> </div>
+                        <div class="mesa-p__left face"> </div>
+                        <div class="mesa-p__top face"> </div>
+                        <div class="mesa-p__bottom face"> </div>
+                    </div>
+                    <div class="mesa-p">
+                        <div class="mesa-p__front face"> </div>
+                        <div class="mesa-p__back face"> </div>
+                        <div class="mesa-p__right face"> </div>
+                        <div class="mesa-p__left face"> </div>
+                        <div class="mesa-p__top face"> </div>
+                        <div class="mesa-p__bottom face"> </div>
+                    </div>
+                    <div class="mesa-shadow"></div>
+                </div>
+                <div class="tablet">
+                    <div class="tablet__front face"> </div>
+                    <div class="tablet__back face"> </div>
+                    <div class="tablet__right face"> </div>
+                    <div class="tablet__left face"> </div>
+                    <div class="tablet__top face"> </div>
+                    <div class="tablet__bottom face"> </div>
+                </div>
+            </div>
         </section>
-
-        <div class="project-card" data-aos="fade-up">
-            <img src="/api/placeholder/1200/400" alt="Once UI Project" class="project-image">
-            <h3 class="project-title">Building Once UI, a Customizable Design System</h3>
-            <p class="project-description">Development of a flexible and highly customizable design system using NextJs
-                for front-end and Figma for design collaboration.</p>
-            <a href="#" class="cta-button">Read Case Study</a>
-        </div>
-
-        <div class="project-card" data-aos="fade-up">
-            <img src="/api/placeholder/1200/400" alt="Portfolio Creator" class="project-image">
-            <h3 class="project-title">Simple portfolio creator built with Once UI and Next.js</h3>
-            <p class="project-description">A minimalist portfolio creation tool that combines the power of Once UI
-                components with Next.js framework.</p>
-            <a href="#" class="cta-button">Read Case Study</a>
-        </div>
-
-        <div class="project-card" data-aos="fade-up">
-            <img src="/api/placeholder/1200/400" alt="Design Handover" class="project-image">
-            <h3 class="project-title">Automating Design Handovers with a Figma to Code Pipeline</h3>
-            <p class="project-description">Explore the everlasting collision between using spaces and tabs for code
-                indentation, and why this choice matters more than you might think.</p>
-            <a href="#" class="cta-button">Read Case Study</a>
-        </div>
+        <section class="show-case">
+            <h2>Features Post</h2>
+            <div class="grid grid-cols-1 gap-8 px-4 md:px-6">
+              <!-- Main featured post -->
+              <div class="relative group" data-aos="fade-up">
+                <div class="grid lg:grid-cols-[2fr,1fr] gap-8">
+                  <div class="space-y-8">
+                    <!-- Side post 1 -->
+                    <div class="flex gap-4 items-start">
+                      <img 
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" 
+                        alt="Blog post" 
+                        class="w-32 aspect-[4/3] object-cover rounded-lg bg-gray-800"
+                      />
+                      <div>
+                        <p class="text-sm text-gray-400">Maret 27, 2022</p>
+                        <h3 class="font-medium mt-1">Mungkin yang kamu butuhkan saat ini bukan lagi latihan tapi terjun ke Industri</h3>
+                      </div>
+                    </div>
+                    <!-- Side post 2 -->
+                    <div class="flex gap-4 items-start">
+                      <img 
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" 
+                        alt="Blog post" 
+                        class="w-32 aspect-[4/3] object-cover rounded-lg bg-gray-800"
+                      />
+                      <div>
+                        <p class="text-sm text-gray-400">Februari 15, 2022</p>
+                        <h3 class="font-medium mt-1">Proses membuat layout dan komposisi pada UI Design</h3>
+                      </div>
+                    </div>
+                    <!-- Side post 3 -->
+                    <div class="flex gap-4 items-start">
+                      <img 
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" 
+                        alt="Blog post" 
+                        class="w-32 aspect-[4/3] object-cover rounded-lg bg-gray-800"
+                      />
+                      <div>
+                        <p class="text-sm text-gray-400">Agustus 11, 2021</p>
+                        <h3 class="font-medium mt-1">Apakah menggunakan Grid akan membatasi kreativitas UI Designer?</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
 
         <section class="newsletter" data-aos="fade-up">
             <h2>Subscribe to Billy's Newsletter</h2>
@@ -196,6 +589,20 @@
             offset: 100,
             once: true
         });
+        // Update time
+        function updateTime() {
+            const now = new Date();
+            const timeElement = document.querySelector('.nav-time');
+            timeElement.textContent = now.toLocaleTimeString('en-US', { 
+                hour12: false,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
     </script>
 </body>
 

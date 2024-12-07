@@ -6,17 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'IBM Plex Mono', monospace;
-        }
-
-
         .location {
             font-size: 0.9rem;
             color: #888;
@@ -148,6 +141,39 @@
             margin: 20px 0;
         }
 
+        .icons .icon {
+            display: inline-block;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .icons .icon i {
+            font-size: 50px;
+            color: #fff;
+            /* Default color, change as needed */
+        }
+
+        .icons .icon span {
+            display: none;
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px;
+            color: #fff;
+            background-color: #333;
+            border-radius: 3px;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .icons .icon:hover span {
+            display: block;
+        }
+
         @media (max-width: 1024px) {
             .top-nav {
                 left: 0;
@@ -224,7 +250,7 @@
             <section class="profile-header" data-aos="fade-up">
                 <div class="profile-info">
                     <h1>R. Billiyan Mulkan Ghifari</h1>
-                    <h2>Design Engineer</h2>
+                    <h2>Software Engineer</h2>
                     <div class="social-links">
                         <a href="#github">GitHub</a>
                         <a href="#linkedin">LinkedIn</a>
@@ -234,53 +260,142 @@
                 <img src="img/about/1.jpg" alt="Profile" class="profile-image">
             </section>
             <section>
-                <p>R. Billiyan Mulkan Ghifari is a Jakarta-based design engineer with a passion for transforming complex
-                    challenges into
-                    simple, elegant design solutions. Her work spans digital interfaces, interactive experiences,
-                    and the convergence of design and technology.</p>
+                <p>An experienced Software Engineer with a 3-year track record in web and Android development, currently
+                    pursuing a master's degree at Universitas Brawijaya. Simultaneously, I am a quick learner and highly
+                    adaptable, driving innovation in the technology field by combining expertise with ongoing education
+                    to deliver impactful and optimal results.</p>
             </section>
 
             <section class="work-section" data-aos="fade-up">
                 <h2>Work Experience</h2>
 
                 <div class="work-item">
-                    <h3>FLY</h3>
-                    <div class="work-period">Senior Design Engineer • 2022 - Present</div>
+                    <h3>Dinta Indonesia</h3>
+                    <div class="work-period">Software Engginer • Jul 2022 - Nov - 2024</div>
                     <ul class="work-description">
-                        <li>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement
-                            and 30% faster load times.</li>
-                        <li>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate
-                            50% faster.</li>
+                        <li>Collaborated with the development team to create applications tailored to both company
+                            product requirements and client requests.</li>
+                        <li>Developed web-based systems using PHP for the backend, leveraging Laravel and CodeIgniter
+                            frameworks, and utilized JavaScript with the Vue.js framework for the frontend. The database
+                            management system employed was MySQL.</li>
                     </ul>
-                    <img src="/api/placeholder/600/300" alt="FLY Project" class="work-image">
                 </div>
 
                 <div class="work-item">
-                    <h3>Creativ3</h3>
-                    <div class="work-period">Lead Designer • 2018 - 2022</div>
+                    <h3>PT Netsindo Sentra Computama</h3>
+                    <div class="work-period">Web developer • Mar 2022 - Jun 2022 </div>
                     <ul class="work-description">
-                        <li>Developed a design system that unified the brand across multiple platforms, improving design
-                            consistency by 40%.</li>
-                        <li>Led a cross-functional team to launch a new product line, contributing to a 15% increase in
-                            overall company revenue.</li>
+                        <li>Collaborated with the development team to create applications that meet company product
+                            requirements and client requests. Developed web-based ERP applications for laboratory
+                            systems using PHP with the CodeIgniter framework and MySQL.</li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <h3>Namatech</h3>
+                    <div class="work-period">Front-End Developer • Mar 2022 - Jun 2022 </div>
+                    <ul class="work-description">
+                        <li>Collaborate with the development team to develop applications that will become company
+                            products or client requests. Developing the interface of the kkuljaem learning website using
+                            PHP with the Laravel framework.</li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <h3>Illiyin Studio</h3>
+                    <div class="work-period">Android Developer • Apr 2022 - May 2022 </div>
+                    <ul class="work-description">
+                        <li>Develop the appearance of a mobile-based application and collaborate with the back-end web
+                            developer team so that the application can run well.</li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <h3>Informatics Engineering Study Program, UIN Malang</h3>
+                    <div class="work-period">Laboratory Assistant 2019 - May 2021 </div>
+                    <ul class="work-description">
+                        <li>Data structure ( 2019 )</li>
+                        <li>Digital electronics ( 2019 )</li>
+                        <li>Computer network ( 2020 )</li>
+                        <li>Distributed systems and networks ( 2021 )</li>
+                        <li>Mobile Programming ( 2021 )</li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <h3>Informatics Engineering Study Program, UIN Malang</h3>
+                    <div class="work-period">Laboratory Assistant 2019 - May 2021 </div>
+                    <ul class="work-description">
+                        <li>Data structure ( 2019 )</li>
+                        <li>Digital electronics ( 2019 )</li>
+                        <li>Computer network ( 2020 )</li>
+                        <li>Distributed systems and networks ( 2021 )</li>
+                        <li>Mobile Programming ( 2021 )</li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <h3>The Ministry of Religious Affairs, Malang City Office - Internship</h3>
+                    <div class="work-period">Web Developer Feb 2021 - Apr 2021 </div>
+                    <ul class="work-description">
+                        <li>Collaborate with the development team to build applications that will serve as institutional
+                            products. Develop the online legalization web app (Lego) and the information system for
+                            Majelis Ta'lim (Sijimat) using PHP with the CodeIgniter framework.</li>
                     </ul>
                 </div>
             </section>
+            <hr>
+            <section class="work-section" data-aos="fade-up">
+                <h2>Studies</h2>
 
+                <div class="work-item">
+                    <h3>Universitas Brawijaya 2023 - Present</h3>
+                    <div class="work-period">Master of Computer Science </div>
+                    <p>Experience: Presenter at the International Conference on Sustainable Information Engineering and
+                        Technology (SIET) 2024.</p>
+
+                </div>
+
+                <div class="work-item">
+                    <h3>UIN Maulana Malik Ibrahim Malang 2018 - 2022 </h3>
+                    <div class="work-period">Bachelor of Computer Science</div>
+                    <ul class="work-description">
+                        <li>Awards: First Place Winner in the Summer Program 2020 of UIN Malang in collaboration with
+                            USIM Malaysia.</li>
+                        <li>Experience: Facilitator for the 2021 Summer Program of UIN Malang in collaboration with UTM
+                            Malaysia.</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
             <section class="work-section" data-aos="fade-up">
                 <h2>Technical skills</h2>
-
-                <div class="work-item">
-                    <h3>Figma</h3>
-                    <p>Able to prototype in Figma with Once UI with unnatural speed.</p>
-                    <img src="/api/placeholder/600/300" alt="Figma Skills" class="work-image">
+                <div class="icons">
+                    <div class="icon"><i class="fab fa-php"></i><span>PHP</span></div>
+                    <div class="icon"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                    <div class="icon"><i class="fas fa-database"></i><span>SQL</span></div>
+                    <div class="icon"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+                    <div class="icon"><i class="fab fa-vuejs"></i><span>VueJS</span></div>
+                    <div class="icon"><i class="fab"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" viewBox="0 0 50 63">
+                        <g clip-path="url(#a)">
+                          <path fill-opacity=".278" fill-rule="evenodd" d="M15.211 15.071-.078 30.074l4.811 4.671 4.811 4.671L29.512 19.71 49.482 0l-9.49.035L30.5.07 15.211 15.071Zm7.327 21.375-7.915 7.85 5.938 6.187c10.473 10.909 9.975 10.65 20.561 10.65h9.334l-8.455-8.38-8.455-8.38 7.953-7.89 7.954-7.888h-19l-7.915 7.85Z" clip-rule="evenodd"/>
+                          <path fill-opacity=".614" fill-rule="evenodd" d="m28.204 49.59-4.213 4.232 3.797 3.656 3.796 3.656h17.869L41.5 53.245c-4.374-4.338-8.207-7.888-8.518-7.888-.311 0-2.461 1.905-4.778 4.233Z" clip-rule="evenodd"/>
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path d="M0 0h50v62.12H0z"/>
+                          </clipPath>
+                        </defs>
+                      </svg></i>
+                      
+                      <span>Flutter</span></div>
+                    <div class="icon"><i class="fab fa-java"></i><span>Java</span></div>
+                    <div class="icon"><i class="fab"></i><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" viewBox="0 0 50 50">
+                        <path fill-opacity=".478" fill-rule="evenodd" d="M0 24.916v24.916h49.997L37.625 37.456C30.82 30.65 25.253 24.977 25.253 24.851c0-.127 5.567-5.769 12.373-12.538L50 .005 25 .002 0 0v24.916Z" clip-rule="evenodd"/>
+                      </svg>
+                      <span>Kotlin</span></div>
+                    <div class="icon"><i class="fab fa-html5"></i><span>HTML</span></div>
+                    <div class="icon"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                    <div class="icon"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="icon"><i class="fab fa-figma"></i><span>Figma</span></div>
+                    <div class="icon"><i class="fas fa-project-diagram"></i><span>UML</span></div>
                 </div>
 
-                <div class="work-item">
-                    <h3>Next.js</h3>
-                    <p>Building next gen apps with Next.js + Once UI + Supabase.</p>
-                    <img src="/api/placeholder/600/300" alt="Next.js Skills" class="work-image">
-                </div>
             </section>
         </main>
     </div>
@@ -292,6 +407,21 @@
             once: true,
             offset: 100
         });
+
+        // Update time
+        function updateTime() {
+            const now = new Date();
+            const timeElement = document.querySelector('.nav-time');
+            timeElement.textContent = now.toLocaleTimeString('en-US', { 
+                hour12: false,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
     </script>
 </body>
 
